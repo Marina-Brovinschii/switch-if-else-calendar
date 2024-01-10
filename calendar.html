@@ -3,7 +3,7 @@
     let calendar = prompt('Care calendar utilizati: persan, traditional sau gregorian?')
     let ziSaptamina = parseInt(prompt('Introdu numarul zilei din saptamina:'))
     
-    if (tipCalendar==='persan') {
+    if (tipCalendar=calendar==='persan') {
         switch (ziSaptamina) {
             case 1:
                 alert('Ai introdus ziua de Simbata!')
@@ -29,7 +29,7 @@
             default:
                 alert('Nu avem asa numar de zi in saptamina!')
         }
-    } else if (tipCalendar==='traditional') {
+    } else if (tipCalendar=calendar==='traditional') {
         switch (ziSaptamina) {
             case 1:
                 alert('Ai introdus ziua de Luni!')
@@ -55,7 +55,7 @@
             default:
                 alert('Nu avem asa numar de zi in saptamina!')
         }
-    } else if (tipCalendar==='gregorian') {
+    } else if (tipCalendar=calendar==='gregorian') {
         switch (ziSaptamina) {
             case 1:
                 alert('Ai introdus ziua de Duminica!')
