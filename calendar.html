@@ -1,0 +1,87 @@
+<script>
+    let tipCalendar = ['persan', 'traditional', 'gregorian']
+    let calendar = prompt('Care calendar utilizati: persan, traditional sau gregorian?')
+    let ziSaptamina = parseInt(prompt('Introdu numarul zilei din saptamina:'))
+    
+    if (tipCalendar==='persan') {
+        switch (ziSaptamina) {
+            case 1:
+                alert('Ai introdus ziua de Simbata!')
+                break
+            case 2:
+                alert('Ai introdus ziua de Duminica!')
+                break
+            case 3:
+                alert('Ai introdus ziua de Luni!')
+                break
+            case 4:
+                alert('Ai introdus ziua de Marti!')
+                break
+            case 5:
+                alert('Ai introdus ziua de Miercuri!')
+                break
+            case 6:
+                alert('Ai introdus ziua de Joi!')
+                break
+            case 7:
+                alert('Ai introdus ziua de Vineri!')
+                break
+            default:
+                alert('Nu avem asa numar de zi in saptamina!')
+        }
+    } else if (tipCalendar==='traditional') {
+        switch (ziSaptamina) {
+            case 1:
+                alert('Ai introdus ziua de Luni!')
+                break
+            case 2:
+                alert('Ai introdus ziua de Marti!')
+                break
+            case 3:
+                alert('Ai introdus ziua de Miercuri!')
+                break
+            case 4:
+                alert('Ai introdus ziua de Joi!')
+                break
+            case 5:
+                alert('Ai introdus ziua de Vineri!')
+                break
+            case 6:
+                alert('Ai introdus ziua de Simbata!')
+                break
+            case 7:
+                alert('Ai introdus ziua de Duminica!')
+                break
+            default:
+                alert('Nu avem asa numar de zi in saptamina!')
+        }
+    } else if (tipCalendar==='gregorian') {
+        switch (ziSaptamina) {
+            case 1:
+                alert('Ai introdus ziua de Duminica!')
+                break
+            case 2:
+                alert('Ai introdus ziua de Luni!')
+                break
+            case 3:
+                alert('Ai introdus ziua de Marti!')
+                break
+            case 4:
+                alert('Ai introdus ziua de Miercuri!')
+                break
+            case 5:
+                alert('Ai introdus ziua de Joi!')
+                break
+            case 6:
+                alert('Ai introdus ziua de Vineri!')
+                break
+            case 7:
+                alert('Ai introdus ziua de Simbata!')
+                break
+            default:
+                alert('Nu avem asa numar de zi in saptamina!')
+        }
+    } else (
+        alert('Erroare')
+    )
+</script>
